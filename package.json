@@ -1,0 +1,35 @@
+{
+  "name": "run-template-2d-phaser",
+  "version": "1.0.0",
+  "description": "Phaser 3 + Vite + TypeScript template",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "_build": "tsc && vite build",
+    "build": "npm run _build",
+    "build:bundled": "cross-env RUNDOT_GAME_DISABLE_EMBEDDED_LIBS=true npm run _build",
+    "preview": "vite preview",
+    "deploy": "npm run build && rundot deploy"
+  },
+  "keywords": [
+    "phaser",
+    "vite",
+    "typescript",
+    "game"
+  ],
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "devDependencies": {
+    "@babel/parser": "^8.0.10",
+    "@types/node": "^24.19.2",
+    "cross-env": "^10.1.0",
+    "firebase": "^12.19.0",
+    "magic-string": "^1.4.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  },
+  "dependencies": {
+    "@series-inc/rundot-game-sdk": "^5.33.0",
+    "phaser": "^4.2.1"
+  }
+}
